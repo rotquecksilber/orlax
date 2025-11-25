@@ -19,7 +19,7 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/dist ./dist
 
 # Экспонируем порт, указанный в Astro (по умолчанию 4321)
-EXPOSE 4321
+EXPOSE 3000
 
 # Запуск SSR сервера
 CMD ["node", "./dist/server/entry.mjs"]
