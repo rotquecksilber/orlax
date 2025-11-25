@@ -1,0 +1,13 @@
+# Включаем переписывание URL
+RewriteEngine On
+
+# Если запрашиваемый файл/директория существуют, отдать их как есть
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Иначе переписать на index.html внутри папки
+RewriteRule ^(.*)/?$ $1/index.html [L]
+
+# Опционально: редирект с /page.html → /page/ (чистый URL)
+RewriteCond %{THE_REQUEST} \s([^.]+)\.html
+RewriteRule ^ %1/ [R=301,L]
