@@ -1,5 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://orlax.ru',
+  site: 'https://arlio.ru',
+  build: {
+    format: 'file', // вместо default 'directory'
+  },
 });
