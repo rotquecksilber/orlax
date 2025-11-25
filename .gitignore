@@ -1,0 +1,65 @@
+# ----------------------------------------
+# Node
+# ----------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Astro build output
+dist/
+.out/
+
+# Local env variables
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+.idea/
+*.swp
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Timeweb Cloud
+.tw-env/
+timeweb.json
+
+# Optional: if you use TypeScript
+*.tsbuildinfo
+
+# Astro Content Collections cache
+.cache/
+.astro/
+
+# Images cache
+public/images/cache/
+
+# If using Tailwind JIT
+.tailwindcss/
+
+# Bun
+bun.lockb

@@ -1,0 +1,32 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import Header from '../components/Header.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+---
+<MainLayout title="ARLIO — практичные руководства и мини-энциклопедии" description="Полезные инструкции, обзоры инструментов и материалы для дома, ремонта и дачи.">
+  <Header />
+  <main class="container">
+    <div class="hero">
+      <div style="flex:1;">
+        <h1>ARLIO — практичные руководства и мини-энциклопедии</h1>
+        <p class="small">Коротко, ясно и по делу: выбор материалов, инструменты, советы по ремонту и уходу за домом.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:32px;">Популярные руководства</h2>
+    <div class="grid" style="margin-top:16px;">
+      <ArticleCard title="Как выбрать входную дверь" description="Материалы, замки, утепление — краткий практичный гид." link="/guides/how-to-choose-door" />
+      <ArticleCard title="Виды отверток: что брать в дом" description="PH, PZ, TORX, HEX — какие нужны и зачем." link="/guides/screwdriver-types" />
+      <ArticleCard title="Как выбрать краску для стен" description="Типы красок, расчёт расхода, подготовка поверхности." link="/guides/paint-selection" />
+      <ArticleCard title="9 советов по выбору напольного покрытия" description="Ламинат, паркет, плитка, линолеум — когда что подходит." link="/guides/flooring-guide" />
+    </div>
+
+    <h2 style="margin-top:36px;">Категории</h2>
+    <div class="grid" style="margin-top:16px;">
+      <a class="card" href="/categories/tools"><h3>Инструменты</h3><p>Обзоры, подборы, как выбрать и пользоваться.</p></a>
+      <a class="card" href="/categories/home"><h3>Дом и ремонт</h3><p>Практические гайды для ремонта и обустройства.</p></a>
+      <a class="card" href="/categories/materials"><h3>Материалы</h3><p>Сравнения, свойства, где применять.</p></a>
+      <a class="card" href="/categories/garden"><h3>Сад и дача</h3><p>Уход, постройки, сезонные работы.</p></a>
+    </div>
+  </main>
+</MainLayout>

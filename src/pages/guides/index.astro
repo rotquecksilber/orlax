@@ -1,0 +1,35 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Header from '../../components/Header.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+---
+<MainLayout title="Руководства — ORLAX">
+  <Header />
+  <div class="container">
+    <h1>Руководства</h1>
+    <p class="small">Сборник практичных статей по дому, инструментам и материалам.</p>
+
+    <div class="grid" style="margin-top:18px;">
+      <ArticleCard title="Как выбрать входную дверь" description="Материалы, замки, утепление — практичный гайд." link="/guides/how-to-choose-door" />
+      <ArticleCard title="Виды отверток: что брать в дом" description="PH, PZ, TORX, HEX — какие нужны и зачем." link="/guides/screwdriver-types" />
+      <ArticleCard title="Как выбрать краску для стен" description="Типы красок, расчёт расхода, подготовка поверхности." link="/guides/paint-selection" />
+      <ArticleCard title="Руководство по выбору напольного покрытия" description="Ламинат, паркет, плитка — где что подходит." link="/guides/flooring-guide" />
+      <ArticleCard title="Основы утепления стен" description="Типы утеплителей, цены, монтаж." link="/guides/insulation-basics" />
+      <ArticleCard title="Как класть плитку: базовые правила" description="Подготовка поверхности, клей, швы." link="/guides/tiling-tips" />
+      <ArticleCard title="Как установить входную дверь" description="Пошаговая инструкция по установке." link="/guides/install-door" />
+      <ArticleCard title="Электробезопасность в доме" description="Простые правила и проверки." link="/guides/electric-safety" />
+      <ArticleCard title="Основы сантехники для дома" description="Замена смесителя, устранение протечек." link="/guides/plumbing-basics" />
+      <ArticleCard title="Клеи и герметики: что выбрать" description="Типы клеев, где применять." link="/guides/adhesives-guide" />
+      <ArticleCard title="Типы окон и их характеристики" description="ПВХ, дерево, алюминий." link="/guides/window-types" />
+      <ArticleCard title="Тёплый пол: электрический или водяной" description="Плюсы и минусы, где лучше ставить." link="/guides/floor-heating" />
+      <ArticleCard title="Инструменты для покраски стен" description="Валики, кисти, краскопульты." link="/guides/paint-tools" />
+      <ArticleCard title="Уход за дверями: продлеваем срок службы" description="Чистка, регулировка замков." link="/guides/door-maintenance" />
+      <ArticleCard title="Как выбрать электроинструмент для дома" description="Дрели, перфораторы, шуруповёрты." link="/guides/power-tools" />
+      <ArticleCard title="Освещение в доме: как сделать правильно" description="Типы светильников, схемы, мощность." link="/guides/lighting-guide" />
+      <ArticleCard title="Ремонт стен: от трещин до отделки" description="Шпаклёвка, армирование, финишная отделка." link="/guides/wall-repair" />
+      <ArticleCard title="Планирование огорода и сада" description="Где что сажать, сезонность." link="/guides/garden-planning" />
+      <ArticleCard title="Как построить террасу/дек" description="Материалы, крепёж, гидроизоляция." link="/guides/deck-building" />
+      <ArticleCard title="Как обустроить маленькую комнату" description="Функциональные решения и мебель." link="/guides/small-space" />
+    </div>
+  </div>
+</MainLayout>
