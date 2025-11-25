@@ -1,1 +1,17 @@
+# Отключаем все дополнительные redirects
 DirectoryIndex index.html
+
+# Разрешаем доступ к файлам .html напрямую
+<FilesMatch "\.html$">
+    Require all granted
+</FilesMatch>
+
+# Разрешаем обычный доступ к папкам с index.html
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Не трогаем URL без .html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ - [L]
+</IfModule>
